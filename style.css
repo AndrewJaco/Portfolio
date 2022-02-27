@@ -1,0 +1,161 @@
+:root{
+--color-dark: #1A2238;
+--color-purple: #9daaf2;
+--color-orange: #ff6a3d;
+--color-neutral: #f4db7d;
+--color-blue:  #25A8C0;
+}
+*{
+   font-family: 'Raleway' , sans-serif;
+   padding: 0;
+   margin: 0;
+   position: relative;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+
+#navbar{
+    position:fixed;
+    background: var(--color-orange);
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px outset;
+    text-align: center;
+    z-index: 1;
+    }
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-right: 2em;
+     
+}
+#navbar ul li {
+    padding: 1em;
+    }
+#navbar ul li a{
+    text-decoration: none;
+    color: var(--color-neutral);
+    font-size: 1.2em;
+    
+    }
+    #navbar ul li a:hover {
+        color: var(--color-purple);
+    }
+
+#welcome-section {
+    position: relative;
+    height: 100vh;
+    background-color: #25A8C0;
+    color:white;
+    z-index: 0;
+    }
+#welcome-section h1:hover, #welcome-section p:hover{
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    color:#ff6a3d;
+    cursor: default;
+
+}
+.center {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome-section div{
+    position: relative;
+    top: 40vh;
+    }
+
+#welcome-section div h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+#welcome-section div p {
+    font-size: 2rem;
+    font-weight: 300;
+   
+}
+
+#projects {
+    position: relative;
+    height: 100vh;
+    width: auto;
+    background-color: var(--color-neutral);
+    color: var(--color-blue);
+    font-size: 2rem;
+
+ }
+ #projects div {
+     padding-top: 10vh;
+      }
+
+ #container{
+     position: relative;
+     
+     display: flex;
+     flex-wrap:wrap;
+     flex-direction: row;
+     justify-content: space-around;
+     
+     border: 2px outset var(--color-purple);
+     
+    }
+
+.project-tile {
+    position: relative;
+    background: white;
+
+    
+       
+}
+.project-tile img {
+    height: 200px;
+    width: 100px;
+
+}
+.project-tile span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+ #contact {
+     position: relative;
+     height: 100vh;
+     background-color: var(--color-dark);
+     color: var(--color-purple);
+     font-size: 2rem;
+     padding-top: 30vh;
+         }
+
+#contact li {
+    position: relative;
+    display: inline-flex;
+    padding: 2rem;
+    justify-content: center;
+    }
+    
+#contact a {
+       text-decoration: none;
+       color: var(--color-purple)
+}
+
+#contact a:hover {
+    
+}
+
+#contact p {
+    padding: 2rem;
+    font-size: 1rem;
+}
